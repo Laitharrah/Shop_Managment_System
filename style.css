@@ -113,7 +113,7 @@ tr:hover {
 
 /* Add more custom styles as needed */
 .custom-background {
-    background: url('images/shop.jpg.webp') no-repeat center center fixed; 
+    background: url('shop.jpg.webp') no-repeat center center fixed; 
     background-size: cover;
     /* You might want to set a specific height */
     min-height: 500px;
