@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     // Password is correct, start the session
                     $_SESSION['user_id'] = $row['id'];
                     $_SESSION['username'] = $row['username'];
-                    header("Location: index.php");
+                    header("Location:index.php");
                     exit;
                 } else {
                     $loginError = "Invalid email or password.";
