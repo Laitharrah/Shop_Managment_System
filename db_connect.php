@@ -1,9 +1,9 @@
 
 <?php
-$servername = "localhost";
-$username = "root"; // default username for XAMPP is 'root'
-$password = ""; // default password for XAMPP is empty
-$dbname = "shop_management_system";
+$servername = "shopmanagementsystem-server.mysql.database.azure.com";
+$username = "vbsbtrsrfr"; // default username for XAMPP is 'root'
+$password = "OM1281MIN770IX53$"; // default password for XAMPP is empty
+$dbname = "shopmanagementsystem-database";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
