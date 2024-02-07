@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h2>Login</h2>
@@ -70,6 +70,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <footer>
         <p>&copy; 2024 Caveni Digital Solutions. All Rights Reserved.</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
