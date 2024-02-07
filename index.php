@@ -12,7 +12,6 @@ $loggedIn = isset($_SESSION['user_id']);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Welcome to Our Shop</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -39,6 +38,6 @@ $loggedIn = isset($_SESSION['user_id']);
     <footer>
         <p>&copy; 2024 Caveni Digital Solutions. All Rights Reserved.</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
