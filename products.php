@@ -170,7 +170,7 @@ if (isset($_GET['editProductId'])) {
 
 
     <footer>
-        <!-- Footer content -->
+        <p>&copy; 2024 Caveni Digital Solutions. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
