@@ -90,6 +90,24 @@ if (isset($_GET['editProductId'])) {
     $stmt_edit->close();
 }
 
+$searchTerm = '';
+if (isset($_GET['search'])) {
+    $searchTerm = test_input($_GET['search']);
+}
+
+// Adjusted SQL query to include search and filter logic
+$sql = "SELECT products.id, products.categoryId, categories.name AS categoryName, products.description, products.name, products.price 
+        FROM products 
+        JOIN categories ON products.categoryId = categories.id
+        WHERE products.name LIKE ? OR products.description LIKE ?";
+
+if ($stmt = $conn->prepare($sql)) {
+    $likeTerm = '%' . $searchTerm . '%';
+    $stmt->bind_param("ss", $likeTerm, $likeTerm);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $stmt->close();
+}
 ?>
 
 <!DOCTYPE html>
@@ -110,6 +128,11 @@ if (isset($_GET['editProductId'])) {
             <a href="products.php">Products</a>
         </nav>
     </header>
+        <!-- Search form -->
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get">
+        <input type="text" name="search" placeholder="Search products" value="<?php echo $searchTerm; ?>">
+        <input type="submit" value="Search">
+    </form>
 
     <!-- Form for adding new product -->
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
