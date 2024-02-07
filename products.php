@@ -96,7 +96,7 @@ if (isset($_GET['editProductId'])) {
 <html>
 <head>
     <title>Products Management</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h2>Products Management</h2>
@@ -172,6 +172,6 @@ if (isset($_GET['editProductId'])) {
     <footer>
         <!-- Footer content -->
     </footer>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
