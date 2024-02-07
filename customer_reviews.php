@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 <html>
 <head>
     <title>Customer Reviews Management</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h2>Customer Reviews</h2>
@@ -57,6 +57,6 @@ $result = $conn->query($sql);
     <footer>
         <p>&copy; 2024 Caveni Digital Solutions. All Rights Reserved.</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
