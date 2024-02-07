@@ -1,4 +1,3 @@
-
 <?php
 $servername = "shopmanagementsystem-server.mysql.database.azure.com";
 $username = "vbsbtrsrfr"; // default username for XAMPP is 'root'
