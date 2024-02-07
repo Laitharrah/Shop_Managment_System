@@ -33,7 +33,7 @@ $loggedIn = isset($_SESSION['user_id']);
     </header>
     <!-- Image Placement -->
     <div class="image-container">
-        <img src="images/shop.jpg.webp" alt="Descriptive Alt Text">
+        <img src="shop.jpg.webp" alt="Descriptive Alt Text">
     </div>
     <footer>
         <p>&copy; 2024 Caveni Digital Solutions. All Rights Reserved.</p>
